@@ -1,13 +1,13 @@
 body{
-    background-color: #F8F8F8;
+    background-color: rgba(255, 255, 255, 0.938);
 }
 
 #form_container{
     background-color: white;
     border-radius: 20px;
-    box-shadow: .5px 10px 15px rgba(0,0,0,.2);
+    box-shadow: .5px 10px 15px rgb(37, 36, 36);
     margin: 25px auto;
-    padding: 25px; 
+    padding: 25px;
 }
 
 #form_container h2{
@@ -15,21 +15,13 @@ body{
     margin-bottom: 30px;
 }
 
-#form_container a {
-    color: #222;
-    transition: .5s;
-}
-
-#form_container a:hover{
-    color: #9c93ff;
-}
-
-#form_container form {
+#form_container form{
     padding-bottom: 50px;
 }
 
-#form_container .form-control {
+#form_container .form-control{
     border: none;
+    padding: 5px;
     border-bottom: 1px solid #ccc;
     border-radius: 0;
 }
@@ -38,34 +30,38 @@ body{
     box-shadow: none;
 }
 
-#form_container .form-floating label{
-    color: #ccc;
-}
-
-#form_container .form-floating > .form-control:focus~label{
-    color: #222;
-}
-
 #form_container input[type="submit"]{
-    background-color: #6c63ff;
-    border-color: #6c63ff;
+    background-color: blueviolet;
+    border-color: blueviolet;
 }
 
-.row.align-items-center{
-    align-items: center;
-    height: 100%;
+#form_container input[type="reset"]{
+    background-color: rgb(238, 238, 47);
+    border-color:  rgb(238, 238, 47);
 }
 
 #link_container {
     text-align: center;
 }
 
+
+
 .btn-btn-primary{
     width: 100%;
 }
 
-/* Melhorar a visibilidade no desktop */
-@media(min-width: 768px){
+#form_container a {
+    color: black;
+    transition: .5s;
+    text-decoration: none;
+}
+
+#form_container a:hover{
+    color: blueviolet;
+}
+
+
+@media (min-width:768px) {
     #form_container{
         margin: 50px auto;
         padding: 50px;
@@ -74,5 +70,4 @@ body{
     .btn-btn-primary{
         width: auto;
     }
-    
 }
